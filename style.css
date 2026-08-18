@@ -3,8 +3,8 @@
 }
 
 body {
-  background: black;
-  color: rgb(45, 45, 45);
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbnLoXn8ZhiXo9EMKFFX2McmX-OtjmmlTInEutXWTnNI2m9Ye-M8t1i9ne:https://images.unsplash.com/photo-1537147347432-676815edd56c%3Ffm%3Djpg%26q%3D60%26w%3D3000%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.1.0%26ixid%3DM3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8&s=10);
+  color: rgb(250, 249, 249);
   padding: 10px;
   font-family: 'Times New Roman', Times, serif,
 }
@@ -21,6 +21,7 @@ nav{
   display: flex;
   padding: 10px;
   margin-bottom: 20px;
+  width: 750px;
 }
 
 h1 {
@@ -50,9 +51,10 @@ a {
 
 /* main container area beneath menu*/
 main{
-  background: #12b31d;
+  background: invisable;
   display: flex;
-  margin-top: 20px;
+  margin-top: 50px;
+  height: 270px;
 }
 
 .sidebar{
@@ -78,4 +80,30 @@ main{
 
 h2, h3{
   margin: 0px;
+}
+
+/* Portfolio styles */
+.content h1 {
+  color: white;
+}
+
+#portfolio {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#portfolio li {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#portfolio li:hover {
+  background: #eee;
+}
+
+#portfolio a {
+  text-decoration: none;
+  color: #454545;
 }
