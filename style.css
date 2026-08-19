@@ -63,7 +63,7 @@ main{
 }
 
 .sidebar-img{
-  width: 215px;
+  width: 285px;
 }
 
 .content{
@@ -73,14 +73,17 @@ main{
 
 /* interests section styles*/
 #interests{
-  border: 4px silver ridge;
-  padding: 8px;
-  margin-top: 20px;
+   background: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: black;
 }
 
 h2, h3{
   margin: 0px;
 }
+
 
 /* Portfolio styles */
 .content h1 {
@@ -106,4 +109,25 @@ h2, h3{
 #portfolio a {
   text-decoration: none;
   color: #454545;
+}
+
+.bounce-list li {
+  list-style: none;
+  padding: 10px;
+  margin: 5px 0;
+  background: #f0f0f0;
+  transition: transform 0.2s ease;
+}
+
+.bounce-list li:hover {
+  animation: bounce 0.4s ease infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
 }
