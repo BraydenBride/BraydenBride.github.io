@@ -36,7 +36,8 @@ $(function () {
     createPlatform(400,600,200,10,"white")
     createPlatform(600,500,200,10,"white")
     createPlatform(400,400,200,10,"white")
-    createPlatform(600,300,500,10,"white")
+    createPlatform(600,300,300,10,"white")
+    createPlatform(1000,300,100,10,"white")
     createPlatform(1300,300,100,10,"white")
     createPlatform(900,500,200,10,"white")
     createPlatform(1200,400,100,10,"white")
@@ -51,6 +52,7 @@ $(function () {
     createPlatform(495,300,10,100,"white")
     createFakePlatform(700,100,100,10,"white")
     createFakePlatform(800,500,100,10,"white")
+    createBadPlatform(900,300,100,10)
 
 
 
