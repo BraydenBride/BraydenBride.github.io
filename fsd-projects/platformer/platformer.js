@@ -77,7 +77,6 @@ $(function () {
     createCannon("bottom",1100,2000)
     createCannon("right",800,1)
 
-
     
     
     //////////////////////////////////
