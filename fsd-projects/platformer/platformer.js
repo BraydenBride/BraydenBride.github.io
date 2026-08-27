@@ -27,35 +27,43 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    toggleGrid();
+   toggleGrid();
+    
 
 
     // TODO 2 - Create Platforms
-    createPlatform(200,700,200,10)
-    createPlatform(400,600,200,10)
-    createPlatform(600,500,200,10)
-    createPlatform(400,400,200,10)
-    createPlatform(600,300,500,10)
-    createPlatform(1300,300,100,10)
-    createPlatform(900,500,200,10)
-    createPlatform(1200,400,100,10)
-    createPlatform(300,200,200,10)
-    createPlatform(1200,200,100,10)
-    createPlatform(600,100,500,10)
-    createPlatform(1200,700,200,10)
-    createPlatform(1100,600,100,10)
-    createPlatform(100,300,200,10)
-    createPlatform(845,300,10,-100)
+    createPlatform(200,700,200,10,"white")
+    createPlatform(400,600,200,10,"white")
+    createPlatform(600,500,200,10,"white")
+    createPlatform(400,400,200,10,"white")
+    createPlatform(600,300,500,10,"white")
+    createPlatform(1300,300,100,10,"white")
+    createPlatform(900,500,200,10,"white")
+    createPlatform(1200,400,100,10,"white")
+    createPlatform(300,200,200,10,"white")
+    createPlatform(1200,200,100,10,"white")
+    createPlatform(600,100,100,10,"white")
+    createPlatform(800,100,300,10,"white")
+    createPlatform(1200,700,200,10,"white")
+    createPlatform(1100,600,100,10,"white")
+    createPlatform(100,300,200,10,"white")
+    createPlatform(845,100,10,100,"white")
+    createPlatform(495,300,10,100,"white")
+    createFakePlatform(700,100,100,10,"white")
+    createFakePlatform(800,500,100,10,"white")
 
 
 
 
     // TODO 3 - Create Collectables
-    createCollectable("diamond",780,20,)
-    createCollectable("grace",1230,150)
-    createCollectable("kennedi",1280,650)
-    createCollectable("max",830,130)
-    createCollectable("steve",180,260)
+    createCollectable("mercury",780,20,)
+    createCollectable("venus",1230,150)
+    createCollectable("earth",1280,650)
+    createCollectable("mars",830,220)
+    createCollectable("jupiter",180,260)
+    createCollectable("saturn",830,350)
+    createCollectable("uranus",480,500)
+    createCollectable("neptune",480,250)
 
 
 
@@ -65,6 +73,7 @@ $(function () {
     createCannon("right",300,2000)
     createCannon("bottom",300,2000)
     createCannon("bottom",1100,2000)
+    createCannon("right",800,1)
 
 
     

@@ -102,4 +102,12 @@ var collectableList = {
   kennedi: { image: "images/collectables/kennedi-head.png" },
   max: { image: "images/collectables/max-head.png" },
   steve: { image: "images/collectables/steve-head.png" },
+  mercury: { image: "https://upload.wikimedia.org/wikipedia/commons/b/b9/3D_Mercury.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"},
+  venus: { image: "https://upload.wikimedia.org/wikipedia/commons/9/93/Venus_globe_-_transparent_background.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"},
+  earth: { image: "https://upload.wikimedia.org/wikipedia/commons/2/22/Earth_Western_Hemisphere_transparent_background.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"},
+  saturn: { image:"https://upload.wikimedia.org/wikipedia/commons/4/43/Saturnx.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"},
+  mars: { image:"https://upload.wikimedia.org/wikipedia/commons/6/68/Mars_%2816716283421%29_-_Transparent_background.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"},
+  jupiter: { image: "https://upload.wikimedia.org/wikipedia/commons/e/e1/Jupiter_%28transparent%29.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"},
+  uranus: { image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Full_Uranus.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"},
+  neptune: { image: "https://upload.wikimedia.org/wikipedia/commons/2/20/Neptune_cutout.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"}
 };
