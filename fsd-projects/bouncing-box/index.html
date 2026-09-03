@@ -8,7 +8,7 @@
       .box {
         width: 70px;
         height: 70px;
-        background-color: teal;
+        background-color:hotpink;
         font-size: 300%;
         text-align: center;
         user-select: none;
@@ -42,6 +42,8 @@
         var box = jQuery(".box"); // reference to the HTML .box element
         var board = jQuery(".board"); // reference to the HTML .board element
         var boardWidth = board.width(); // the maximum X-Coordinate of the screen
+        var boardHeight = jQuery(window).height();
+
 
         // update the boardWidth variable when the window is resized
         jQuery(window).on("resize", function () {
@@ -69,6 +71,14 @@
         //////////////////////////////////////////////////////////////////
 
         // TODO 2 - Variable declarations
+        var positionX = 0;
+        var points = 0;
+        var speed = 10;
+        var positionY = 0;
+        var speedY = 10;
+        var positionY;
+        var speedY;
+        var randNum = Math.random() * 100;
 
 
 
@@ -80,8 +90,17 @@
          * If the box drifts off the screen, turn it around!
          */
         function update() {
-
-        
+        positionX = positionX + speed;
+          moveBoxTo(positionX, positionY);{
+          box.css("left", positionX);
+          box.css("top", positionY);
+          }
+          if (positionX > boardWidth){
+            speed *= -1;
+          }
+          if (positionX < 0){
+            speed *= -1
+          }
 
           
         }
@@ -94,6 +113,10 @@
          * - move the box to the left side of the screen.
          */
         function handleBoxClick() {
+          positionX = 0;
+          changeBoxText(points);
+          points += 1;
+          speed = 3 * points + 10;
 
 
 
