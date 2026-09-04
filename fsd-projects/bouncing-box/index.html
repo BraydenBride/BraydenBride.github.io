@@ -8,7 +8,7 @@
       .box {
         width: 70px;
         height: 70px;
-        background-color:hotpink;
+        background-color: hotpink;
         font-size: 300%;
         text-align: center;
         user-select: none;
@@ -17,10 +17,12 @@
         top: 100px;
         /* Change me! */
         left: 0px;
+        text-color:white;
       }
 
       .board {
         height: 100vh;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2gAOAnASn6Qxt7wSekUYfmB0-Ims3vbvmshRDn0sOzbT4IScK59HB9GM:https://cdn.mos.cms.futurecdn.net/HuGGeENt6kGyixe3hT9tnY.jpg&s=10);
       }
     </style>
     <!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -43,6 +45,11 @@
         var board = jQuery(".board"); // reference to the HTML .board element
         var boardWidth = board.width(); // the maximum X-Coordinate of the screen
         var boardHeight = jQuery(window).height();
+        var colorStr = "rgb(50, 25, 250)";
+        box.css("background-color", colorStr);
+        var randomNumberBetween0and10 = Math.random() * 255;
+        var randNum = Math.random() * 1000;
+
 
 
         // update the boardWidth variable when the window is resized
@@ -57,8 +64,9 @@
         box.on("click", handleBoxClick);
 
         // moves the Box to a new position on the screen along the X-Axis
-        function moveBoxTo(newPositionX) {
+        function moveBoxTo(newPositionX, newPositionY) {
           box.css("left", newPositionX);
+          box.css("top", newPositionY);;
         }
 
         // changes the text displayed on the Box
@@ -78,7 +86,8 @@
         var speedY = 10;
         var positionY;
         var speedY;
-        var randNum = Math.random() * 100;
+        
+
 
 
 
@@ -91,16 +100,23 @@
          */
         function update() {
         positionX = positionX + speed;
-          moveBoxTo(positionX, positionY);{
-          box.css("left", positionX);
-          box.css("top", positionY);
-          }
+        positionY = positionY + speedY;
+          moveBoxTo(positionX, positionY);
+          
+          
           if (positionX > boardWidth){
             speed *= -1;
           }
           if (positionX < 0){
-            speed *= -1
+            speed *= -1;
           }
+          if (positionY > boardHeight){
+            speedY *= -1;
+          }
+          if (positionY < 0){
+            speedY *= -1;
+          }
+          
 
           
         }
@@ -113,10 +129,13 @@
          * - move the box to the left side of the screen.
          */
         function handleBoxClick() {
-          positionX = 0;
+          positionX = randNum;
           changeBoxText(points);
           points += 1;
           speed = 3 * points + 10;
+          positionY = randNum;
+          getRandomColor(0-255);
+          
 
 
 
