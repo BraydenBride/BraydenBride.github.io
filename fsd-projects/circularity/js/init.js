@@ -32,6 +32,14 @@ var init = function (window) {
             view.addChild(circle);
             circles.push(circle);
          }
+         Gamification.init({
+    canvas: canvas,
+    view: view,
+    draw: draw,
+    physikz: physikz,
+    circles: circles,
+    game: game
+});
 
 
         // TODO 3 : Call the drawCircle() function
@@ -39,8 +47,8 @@ var init = function (window) {
 
 
         // TODO 7 : Use a loop to create multiple circles
-        for (var i = 0; i < 200; i++) {
-            drawCircle(200);
+        for (var i = 0; i < 50; i++) {
+            drawCircle(50);
 }
 
 
@@ -66,6 +74,7 @@ var init = function (window) {
             for (var i = 0; i < circles.length; i++) {
                  physikz.updatePosition(circles[i]);
                  game.checkCirclePosition(circles[i]);
+                 Gamification.update();
             }
         }
         /* 
