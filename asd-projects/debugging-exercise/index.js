@@ -65,8 +65,11 @@ function makeGhost(id) {
     "#f0f",
     "#fff",
     "#fa0",
-    "#0a0",
+    "rgb(112, 112, 112)",
     "#a0f",
+    "rgb(92, 69, 18)",
+    "#000000",
+    "#d786fc"
   ];
   ghost.color = colors[Math.floor(Math.random() * colors.length)];
 
